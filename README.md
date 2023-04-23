@@ -2,7 +2,7 @@
 
 ## Steps to run the project:
 
-1. After cloning, make sure you have virtualenv installed. The run the following command:
+1. After cloning, make sure you have virtualenv installed. Then run the following command:
 
 ```
 python3 -m venv myenv   
