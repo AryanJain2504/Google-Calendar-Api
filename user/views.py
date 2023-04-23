@@ -14,7 +14,7 @@ import os
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 # This variable specifies the name of a file that contains the OAuth 2.0
 # information for this application, including its client_id and client_secret.
-CLIENT_SECRETS_FILE = "/Users/aryan/code/aryan/Google-Calendar-Api/credentials.json"
+CLIENT_SECRETS_FILE = os.path.join(os.path.dirname(__file__), 'credentials.json')
 # CLIENT_SECRETS_FILE = os.environ['GOOGLE_CREDENTIALS']
 
 # This OAuth 2.0 access scope allows for full read/write access to the
@@ -51,9 +51,7 @@ class GoogleCalendarInitView(APIView):
         # Store the state so the callback can verify the auth server response.
         request.session['state'] = state
 
-        response = redirect(authorization_url)
-
-        return response
+        return redirect(authorization_url)
 
 
 class GoogleCalendarRedirectView(APIView):
