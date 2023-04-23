@@ -18,20 +18,15 @@ source myenv/bin/activate
 pip install -r requirements.txt 
 ```
 
-4. Cd into the folder: 
-``` 
-cd calendarApi/ 
-```
-
-5. Perform all migrations: 
+4. Perform all migrations: 
 ``` 
 python3 manage.py migrate
 ```
 
-6. Run server: 
+5. Run server: 
 ``` 
 python3 manage.py runserver 8080
 ```
 
-7. Open browser and go to the following url: http://127.0.0.1:8080/rest/v1/calendar/init
+6. Open browser and go to the following url: http://127.0.0.1:8080/rest/v1/calendar/init
 
