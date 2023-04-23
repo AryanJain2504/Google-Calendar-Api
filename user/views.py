@@ -88,7 +88,7 @@ class GoogleCalendarRedirectView(APIView):
         # and other tools that interact with Google APIs.
         # The Discovery API provides a list of Google APIs and a machine-readable "Discovery Document" for each API
         service = googleapiclient.discovery.build(
-            API_SERVICE_NAME, API_VERSION, credentials=credentials)
+            API_SERVICE_NAME, API_VERSION, credentials=credentials, static_discovery=False)
 
         # Returns the calendars on the user's calendar list
         calendar_list = service.calendarList().list().execute()
