@@ -7,6 +7,10 @@
 ```
 python3 -m venv myenv   
 ```
+Activate the virtualenv:
+
+```
+source myenv/bin/activate
 
 2. Cd into the folder: 
 ``` 
