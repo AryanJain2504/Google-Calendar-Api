@@ -7,27 +7,28 @@
 ```
 python3 -m venv myenv   
 ```
-Activate the virtualenv:
+2. Activate the virtualenv:
 
 ```
 source myenv/bin/activate
+```
 
-2. Cd into the folder: 
+3. Cd into the folder: 
 ``` 
 cd calendarApi/ 
 ```
 
-3. Install all packages using: 
+4. Install all packages using: 
 ``` 
 pip install -r requirements.txt 
 ```
 
-4. Perform all migrations: 
+5. Perform all migrations: 
 ``` 
 python3 manage.py migrate
 ```
 
-5. Run server: 
+6. Run server: 
 ``` 
 python3 manage.py runserver 8080
 ```
